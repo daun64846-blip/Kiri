@@ -8,10 +8,10 @@ class Car:
 
     def display_info(self):
         print("--- Car Information ---")
-        print("Brand: {self.brand}")
-        print("Model: {self.model}")
-        print("Year: {self.year}")
-        print("Color: {self.color}")
+        print(f"Brand: {self.brand}")
+        print(f"Model: {self.model}")
+        print(f"Year: {self.year}")
+        print(f"Color: {self.color}")
 
 car1 = Car("Toyota", "Camry", 2022, "Silver")
 car2 = Car("Ford", "Mustang", 1969, "Red")

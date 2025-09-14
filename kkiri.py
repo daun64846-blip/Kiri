@@ -36,18 +36,41 @@
 # print(self.a)
 # print(self.b)
 
-class Price_fruit:
+# class Price_fruit:
+#
+#     def __init__(self, fruit_name):
+#         print("Фрукт", fruit_name )
+#
+#     def price(self, fruit_price):
+#         print("Ціна", fruit_price)
+#
+#
+# apple = Price_fruit("Яблуко")
+# apple.price("12 грн")
+#
+# lemon = Price_fruit("Лимон")
+# lemon.price("8 грн")
 
-    def __init__(self, fruit_name):
-        print("Фрукт", fruit_name )
+class Car:
 
-    def price(self, fruit_price):
-        print("Ціна", fruit_price)
+    def __init__(self, brand, model, year, color):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.color = color
 
+    def display_info(self):
+        print("Car Information")
+        print(f"Brand: {self.brand}")
+        print(f"Model: {self.model}")
+        print(f"Year: {self.year}")
+        print(f"Color: {self.color}")
 
-apple = Price_fruit("Яблуко")
-apple.price("12 грн")
+car1 = Car("Toyota", "Camry", 2022, "Silver")
+car2 = Car("Ford", "Mustang", 1969, "Red")
+car3 = Car("Tesla", "Model 3", 2024, "Black")
 
-lemon = Price_fruit("Лимон")
-lemon.price("8 грн")
+car1.display_info()
+car2.display_info()
+car3.display_info()
 
